@@ -98,6 +98,11 @@ function addToCart(productId, qty) {
   else cart.push({ productId, qty });
 
   updateCartCount();
+
+  // ⭐ اگر سبد خرید باز است، لیست را دوباره رندر کن
+  if (!cartPanelEl.classList.contains("hidden")) {
+    renderCart();
+  }
 }
 
 const cartPanelEl = document.getElementById("cart-panel");
