@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>erfan online flower shop</title>
+
+  <!-- اتصال فایل استایل -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.fontcdn.ir/css/VazirmatnFD.css" rel="stylesheet">
+  <!-- اتصال فایل جاوااسکریپت -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- هدر سایت -->
+  <header class="header">
+    <h1>erfan online flower shop</h1>
+
+    <div id="cart-icon" class="cart-icon">
+      🛒
+      <span id="cart-count">0</span>
+    </div>
+  </header>
+
+  <!-- بخش اصلی -->
+  <main>
+    <div class="search-wrapper">
+      <input type="text" id="search-input" placeholder="جستجوی محصول..." />
+      <span class="search-icon">🔍</span>
+    </div>
+    <!-- لیست محصولات -->
+    <div id="product-list" class="products"></div>
+
+    <!-- مودال جزئیات محصول -->
+    <div id="product-detail" class="modal hidden"></div>
+
+    <!-- پنل سبد خرید -->
+    <div id="cart-panel" class="cart-panel hidden"></div>
+
+  </main>
+
+</body>
+</html>
